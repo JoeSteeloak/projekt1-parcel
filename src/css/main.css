@@ -1,15 +1,16 @@
-main {
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    max-width: 100%;
 }
+
 
 header {
     background-color: black;
     color: white;
     height: 120px;
     margin: 0;
-    position: fixed;
     padding: 0 1em;
     display: flex;
     justify-content: space-between;
@@ -18,14 +19,174 @@ header {
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
 }
 
-footer {
+/* positionering av footern */
+#page-container {
     position: relative;
-    top: 20vh;
+    min-height: 100vh;
+}
+
+#content-wrap {
+    padding-bottom: 150px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 150px;
+    width: 100%;
     background-color: black;
     color: white;
 }
 
 @media screen and (max-width: 800px) {
-    
+
+    /* Meny knapp, öppna meny */
+    .menu-btn {
+        display: flex;
+        align-items: center;
+        padding: 8px 15px;
+        background-color: black;
+        color: white;
+        border: white solid 2px;
+        cursor: pointer;
+    }
+
+    .open {
+        margin: 0 1em;
+    }
+
+    .menu-btn:hover {
+        background-color: grey;
+        box-shadow: 0 0px 5px rgba(0, 0, 0, 0.421);
+    }
+
+    .menu-icon {
+        margin-right: 10px;
+    }
+
+    /* de tre svarta strecken (hamburg-icon) */
+    .bars {
+        display: block;
+        width: 20px;
+        height: 3px;
+        background-color: white;
+        margin: 5px 0;
+    }
+
+    /* Design av meny för mobilenheter, placeras till höger om skärmen */
+    nav {
+        background-color: black;
+        box-shadow: 0 0px 10px rgba(0, 0, 0, 0.71);
+        font-size: 1.4em;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        width: 50%;
+        display: none;
+    }
+
+    nav ul {
+        width: 100%;
+        list-style-type: none;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    nav li {
+        padding: 0 0;
+        width: 100%;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        padding: 1em 1em;
+        font-size: 24px;
+        display: block;
+
+    }
+
+    nav a:hover {
+        color: black;
+    }
+
+    nav li:hover {
+        background-color: white;
+        cursor: pointer;
+        color: inherit;
+    }
+
+    /* Roterar två lodräda streck, till ett kryss */
+    .cross1 {
+        width: 25px;
+        transform: rotate(45deg);
+        position: relative;
+        top: 5px;
+    }
+
+    .cross2 {
+        width: 25px;
+        transform: rotate(135deg);
+        position: relative;
+        top: -3px;
+    }
+
+    /* Meny knapp, stäng */
+    .close {
+        margin: 1em 1.5em;
+        padding: 10px 15px;
+
+    }
+
+    .menu-text {
+        font-size: 24px;
+    }
 }
 
+/* desktop */
+@media screen and (min-width: 1201px) {
+
+    /* designa navbaren*/
+    nav a {
+        text-decoration: none;
+        font-size: 2rem;
+        margin-top: 80px;
+        color: black;
+        border: 1px solid white;
+        background-color: white;
+        padding: 5px 25px;
+    }
+
+    nav a.current {
+        color: white;
+        background-color: black;
+    }
+
+    nav li {
+        margin-top: 10px;
+        list-style-type: none;
+        display: inline;
+        margin-left: 10%;
+
+    }
+
+    nav ul {
+        width: 75%;
+        min-width: 1024px;
+        padding: 15px;
+        margin: 0px auto 0px auto;
+        text-align: center;
+    }
+
+    nav a:hover {
+        background-color: black;
+        color: white;
+    }
+    .menu-btn {
+        display: none;
+    }
+}
