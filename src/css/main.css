@@ -283,6 +283,13 @@ footer {
     .menu-text {
         font-size: 24px;
     }
+    /* designa main-text*/
+    main p, main h1 {
+        text-align: center;
+        padding: 10px;
+        max-width: 500px;
+        margin: 0 auto;
+    }
 }
 
 /* desktop */
