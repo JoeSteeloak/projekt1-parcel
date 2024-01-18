@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     max-width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
@@ -38,6 +39,19 @@ footer {
     color: white;
 }
 
+#clock {
+    margin: 20px auto;
+    padding: 0;
+    background: #333;
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-size: 34px;
+    font-family: calibri;
+  }
+
+/* mobile */
 @media screen and (max-width: 800px) {
 
     /* Meny knapp, öppna meny */
