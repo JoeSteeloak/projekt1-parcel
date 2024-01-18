@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/main.css">
     <title>Bilder</title>
     <script src="js/main.js" type="module"></script>
-    <script src="js/clock.js" defer></script>
+    <script src="js/clock.js" type="module"></script>
 </head>
 
 <body>
@@ -43,36 +43,38 @@
             </header>
             <main>
                 <h1>Bilder</h1>
-                <picture>
-                    <source srcset="images/1.jpg?as=avif&width=800" type="image/avif">
-                    <source srcset="images/1.jpg?as=webp&width=800" type="image/webp">
-                    <source srcset="images/1.jpg?width=800" type="image/jpeg">
-                    <img src="images/1.jpg?width=200" alt="image 1">
-                </picture>
-                <picture>
-                    <source srcset="images/2.jpg?as=avif&width=800" type="image/avif">
-                    <source srcset="images/2.jpg?as=webp&width=800" type="image/webp">
-                    <source srcset="images/2.jpg?width=800" type="image/jpeg">
-                    <img src="images/2.jpg?width=200" alt="image 2">
-                </picture>
-                <picture>
-                    <source srcset="images/3.jpg?as=avif&width=800" type="image/avif">
-                    <source srcset="images/3.jpg?as=webp&width=800" type="image/webp">
-                    <source srcset="images/3.jpg?width=800" type="image/jpeg">
-                    <img src="images/3.jpg?width=200" alt="image 3">
-                </picture>
-                <picture>
-                    <source srcset="images/4.jpg?as=avif&width=800" type="image/avif">
-                    <source srcset="images/4.jpg?as=webp&width=800" type="image/webp">
-                    <source srcset="images/4.jpg?width=800" type="image/jpeg">
-                    <img src="images/4.jpg?width=200" alt="image 4">
-                </picture>
-                <picture>
-                    <source srcset="images/5.jpg?as=avif&width=800" type="image/avif">
-                    <source srcset="images/5.jpg?as=webp&width=800" type="image/webp">
-                    <source srcset="images/5.jpg?width=800" type="image/jpeg">
-                    <img src="images/5.jpg?width=200" alt="image 5">
-                </picture>
+                <div class="image-gallery">
+                    <picture>
+                        <source srcset="images/1.jpg?as=avif&width=800" type="image/avif">
+                        <source srcset="images/1.jpg?as=webp&width=800" type="image/webp">
+                        <source srcset="images/1.jpg?width=800" type="image/jpeg">
+                        <img src="images/1.jpg?width=200" alt="image 1">
+                    </picture>
+                    <picture>
+                        <source srcset="images/2.jpg?as=avif&width=800" type="image/avif">
+                        <source srcset="images/2.jpg?as=webp&width=800" type="image/webp">
+                        <source srcset="images/2.jpg?width=800" type="image/jpeg">
+                        <img src="images/2.jpg?width=200" alt="image 2">
+                    </picture>
+                    <picture>
+                        <source srcset="images/3.jpg?as=avif&width=800" type="image/avif">
+                        <source srcset="images/3.jpg?as=webp&width=800" type="image/webp">
+                        <source srcset="images/3.jpg?width=800" type="image/jpeg">
+                        <img src="images/3.jpg?width=200" alt="image 3">
+                    </picture>
+                    <picture>
+                        <source srcset="images/4.jpg?as=avif&width=800" type="image/avif">
+                        <source srcset="images/4.jpg?as=webp&width=800" type="image/webp">
+                        <source srcset="images/4.jpg?width=800" type="image/jpeg">
+                        <img src="images/4.jpg?width=200" alt="image 4">
+                    </picture>
+                    <picture>
+                        <source srcset="images/5.jpg?as=avif&width=800" type="image/avif">
+                        <source srcset="images/5.jpg?as=webp&width=800" type="image/webp">
+                        <source srcset="images/5.jpg?width=800" type="image/jpeg">
+                        <img src="images/5.jpg?width=200" alt="image 5">
+                    </picture>
+                </div>
                 <div id="clock">
                     <p></p>
                 </div>
