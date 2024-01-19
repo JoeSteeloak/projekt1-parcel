@@ -345,7 +345,8 @@ footer {
     }
 
     /* designa bildgalleriet */
-    .image-gallery {
-     
+    img {
+     display: block;
+     margin: 10px auto;
     }
 }
